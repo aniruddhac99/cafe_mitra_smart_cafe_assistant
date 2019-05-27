@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/image1"
+    android:paddingLeft="18dp"
+    android:paddingTop="18dp"
+    android:paddingRight="18dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/name"
+        android:textSize="18sp"
+        android:inputType="textCapWords"
+        android:textColor="@color/namehint"
+        android:textColorHint="@color/namehint" />
+
+    <TextView
+        android:id="@+id/toppings"
+        style="@style/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="12dp"
+        android:text="@string/toppings" />
+
+    <CheckBox
+        android:id="@+id/creamcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toppings"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/cream"
+        android:textColor="#d84805"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
+    <CheckBox
+        android:id="@+id/chocolatcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creamcheck"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:text="@string/chocolate"
+        android:textColor="#d84805"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/quantity_text"
+        style="@style/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chocolatcheck"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="@string/quantity_text" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity_text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="decrement"
+        android:text="@string/decrement" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/decrement"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/decrement"
+        android:layout_toRightOf="@id/decrement"
+        android:text="@string/quantity"
+        android:textAllCaps="true"
+        android:textColor="#ff8e1b"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/decrement"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/quantity"
+        android:layout_toRightOf="@id/quantity"
+        android:onClick="increment"
+        android:text="@string/increment" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decrement"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="6dp"
+        android:text="@string/price" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="12dp"
+        android:text="@string/total"
+        android:textColor="@color/total"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:onClick="order"
+        android:text="@string/order" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="casual"
+        android:text="@string/welcome"
+        android:textColor="@color/welcome"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

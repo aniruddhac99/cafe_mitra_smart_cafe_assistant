@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cafe Mitra</string>
+    <string name="name">Name</string>
+    <string name="toppings">Toppings</string>
+    <string name="cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="quantity_text">Quantity</string>
+    <string name="decrement">-</string>
+    <string name="increment">+</string>
+    <string name="quantity">0</string>
+    <string name="price">Price</string>
+    <string name="total">0</string>
+    <string name="order">Order</string>
+    <string name="welcome">Welcome To CAFE MITRA</string>
+    <string name="bye">Thank You!!!\nCome back Soon!!!</string>
+</resources>
